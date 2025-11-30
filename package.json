@@ -1,0 +1,22 @@
+{
+  "name": "vex-discord-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A Discord bot with absurd commands",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "vex",
+    "autism"
+  ],
+  "author": "Christian Bassler",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
+  }
+}
