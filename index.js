@@ -86,15 +86,17 @@ client.on(Events.MessageCreate, async (message) => {
 
 });
 
-/*
+
 client.once(Events.ClientReady, async () => {
     console.log(`Logged in as ${client.user.tag}`);
     const channel = client.channels.cache.get("1447292975825551380");
     channel.send("Clanker online");
-    channel = client.channels.cache.get("1444414007627747428");
+});
+client.once(Events.ClientReady, async () => {
+    console.log(`Logged in as ${client.user.tag}`);
+    const channel = client.channels.cache.get("1444414007627747428");
     channel.send("Clanker online");
 });
-*/
 // code ^
 
 client.login(process.env.DISCORD_TOKEN);
