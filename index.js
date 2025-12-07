@@ -53,12 +53,16 @@ client.on(Events.MessageCreate, async (message) => {
     await message.reply('🥹');
   } else if (message.content.includes('😱')) {
     await message.reply('😱');
-  } else if (message.content.includes('clanker') && message.content.includes('manual')) {
-    await message.reply('https://www.vexrobotics.com/push-back-manual?srsltid=AfmBOor86bmpYn7q-IxccnlD6qsAjmT6GBDwdifRyZUkukF0SuA10zPK');
+  } else if (message.content.includes('clanker')) {
+    if (message.content.includes('manual')) {
+      await message.reply('https://www.vexrobotics.com/push-back-manual?srsltid=AfmBOor86bmpYn7q-IxccnlD6qsAjmT6GBDwdifRyZUkukF0SuA10zPK');
+    } else if (message.content.includes('crazy')) {
+      await message.reply('Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. Crazy? I was crazy once, they put me in a room, a rubber room, a rubber room with rats, rats make me crazy. ');
+    }
   }
 
   if (message.mentions.has(client.user)) {
-    await message.reply('Yeah?');
+    await message.reply('Wassup');
   }
 
 });
