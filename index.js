@@ -1,6 +1,8 @@
 import 'dotenv/config';
 import { Client, GatewayIntentBits, SlashCommandBuilder, Events } from 'discord.js';
 
+console.log("Booting Clanker");
+
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,            // required base intent
@@ -61,7 +63,7 @@ client.on(Events.MessageCreate, async (message) => {
   console.log("Log Message: " + message.content + " - " + message.author.tag);
   if (message.author.bot) return;                      // ignore bots
   if (message.content.includes('67')) {
-    await message.reply('KYS');
+    await message.reply('Reconsider your life choices, maybe jump off a bridge?(onto a bouncy castle obviously)');
   } else if (message.content.includes('🥹')) {
     await message.reply('🥹');
   } else if (message.content.includes('😱')) {
