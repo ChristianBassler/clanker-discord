@@ -73,6 +73,10 @@ client.on(Events.MessageCreate, async (message) => {
       await message.reply('https://www.vexrobotics.com/push-back-manual?srsltid=AfmBOor86bmpYn7q-IxccnlD6qsAjmT6GBDwdifRyZUkukF0SuA10zPK');
     } else if (message.content.includes('crazy')) {
       await message.reply('Crazy? I was crazy once; they put me in a room, a rubber room, a rubber room full of rats, rats make me crazy.');
+    } else if (message.content.includes('mines')) {
+      await message.reply('Yes master... ');
+    } else if (message.content.includes('rubber') && message.content.includes('room')) {
+      await message.reply('NO NOT AGAIN PLEASE NO ADJNBAQJHFHEUYWRFHBJUASFHUAKFGUIKFDVWUYQAGDVJHSAGFDKJ');
     }
   }
 
