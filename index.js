@@ -27,10 +27,9 @@ client.once(Events.ClientReady, async () => {
         const guild = await client.guilds.fetch(guildId);
         await guild.commands.set(commands);
         console.log('Commands registered to guild.');
-    } else {
-        await client.application.commands.set(commands);
-        console.log('Global commands registered.');
     }
+    await client.application.commands.set(commands);
+    console.log('Global commands registered.');
 });
 
 // code v
