@@ -18,18 +18,22 @@ const commands = [
 
 // slahs commands
 
+const guildIds = process.env.GUILD_IDS.split(",").map(id => id.trim());
+
 client.once(Events.ClientReady, async () => {
     console.log(`Logged in as ${client.user.tag}`);
 
-    // Register slash command
-    const guildId = process.env.GUILD_ID;
-    if (guildId) {
-        const guild = await client.guilds.fetch(guildId);
-        await guild.commands.set(commands);
-        console.log('Commands registered to guild.');
+    const commandsJson = commands.map(c => c.toJSON());
+
+    for (const id of guildIds) {
+        try {
+            const guild = await client.guilds.fetch(id);
+            await guild.commands.set(commandsJson);
+            console.log(`Commands registered to guild: ${id}`);
+        } catch (err) {
+            console.error(`Error registering commands for guild ${id}:`, err);
+        }
     }
-    await client.application.commands.set(commands);
-    console.log('Global commands registered.');
 });
 
 // code v
